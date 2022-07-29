@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imágens dinâmicas</h1>
+    <p>
+        Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.
+    </p>
+
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto_p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto_m.png" type="image/png">
+        <img src="imagens/foto_g.png" alt="Imágem dinâmicas">
+
+    </picture>
+    <p>
+        A imagem acima foi adicionada usando a tag &lt;picture&gt; dentro dela usa-se a tag &lt;img&gt; com os paramentos já explicados anteriormente para selecionar a imágem padrão.
+    </p>sour
+    <p>
+        Para torna-la dinamica foi utilizada a tag &lt;source&gt; com parâmetros de media tipe "source:media:tipe".Nos parametros foram usadas as seguintes definições:
+        <pre>
+    media="(max-width:'tamano em px'")  - deste modo definiu-se que a imagem sera alternada com base no tamanho maximo da largura em pixels.
+    srcset="'diretório da imagem'" = selecionado a imagem q irá, substituí-la.
+    type="image/'extenção'" = setado que tipo de imagem estamos trabalhando.
+        </pre>
+        Vale lembrar que o source deve ser definido do menor para o maior e depois a imagem padrão.
+    </p>
+    
+    <h1>Reproduzindo áudios</h1>
+    <p>
+        vamos aprender a reproduzir áudios em HTML5.
+    </p>
+
+    <audio preload="metadata" controls >
+        <source src="midia/Texte1.mp3" type="audio/mpeg">
+        
+    </audio>
+    <p>
+        O áudio acima foi adicionando usando a tag &lt;audio&gt; com os parâmetros de preload="metadata" (onde só carrega as informações do arquivo) e o controls onde mostra o player do arquivo.Dentro dessa tag usanmos a tag &lt;source&gt; com os parametros src="caminho do arquivo" type="valor referente a extenção do arquivo".
+    </p>
+    
+</body>
+</html>
